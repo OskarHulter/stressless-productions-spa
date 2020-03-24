@@ -1,0 +1,24 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {"sourceType": "module"},
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "extends": [
+    "problems", 
+    "eslint:recommended",
+    "plugin:react/recommended", 
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended"
+  ],
+  "rules": {
+    "semi": ["error", "never"],
+    "quotes": ["error", "backtick"],
+    "max-len": [1, 120, 2, {"ignoreComments": true}],
+    "prefer-destructuring": ["warn", "always"],
+    "prefer-spread": ["warn", "always"],
+    "prettier": [""]
+  }
+}

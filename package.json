@@ -1,44 +1,45 @@
 {
   "name": "slp",
   "version": "1.0.0",
-  "description": "Royalty free music - for free!",
+  "description": "royalty free music for all",
   "main": "index.js",
-  "scripts": {
-    "build": "webpack --mode production"
-  },
-  "keywords": [
-    "music"
-  ],
-  "author": "Oskar Hulter",
-  "license": "MIT",
-  "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/plugin-proposal-class-properties": "^7.8.3",
-    "@babel/plugin-proposal-object-rest-spread": "^7.9.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
-    "@babel/preset-env": "^7.9.0",
-    "@babel/preset-react": "^7.9.4",
-    "@babel/preset-typescript": "^7.9.0",
-    "@typescript-eslint/eslint-plugin": "^2.25.0",
-    "@typescript-eslint/parser": "^2.25.0",
-    "babel-eslint": "^10.1.0",
-    "babel-loader": "^8.1.0",
-    "eslint": "^6.8.0",
-    "eslint-config-problems": "^4.0.0",
-    "eslint-loader": "^3.0.3",
-    "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^2.5.1",
-    "html-loader": "^1.0.0",
-    "html-webpack-plugin": "^4.0.1",
-    "prettier": "^2.0.2",
-    "typescript": "^3.8.3",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
-  },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.9",
+    "@xstate/react": "^0.8.1",
+    "next": "^9.3.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "styled-components": "^5.0.1"
-  }
+    "react-router": "^5.1.2",
+    "react-table": "^7.0.0",
+    "styled-components": "^5.0.1",
+    "use-sound": "^1.0.1",
+    "xstate": "^4.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.9.5",
+    "@types/react": "^16.9.27",
+    "@types/react-table": "^7.0.12",
+    "@types/styled-components": "^5.0.1",
+    "babel-plugin-styled-components": "^1.10.7",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0",
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OskarHulter/stressless-productions-spa.git"
+  },
+  "author": "Oskar Hulter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OskarHulter/stressless-productions-spa/issues"
+  },
+  "homepage": "https://github.com/OskarHulter/stressless-productions-spa#readme"
 }

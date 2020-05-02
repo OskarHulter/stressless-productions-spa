@@ -6,13 +6,5 @@
       "file": "static/chunks/0.js",
       "publicPath": "static/chunks/0.js"
     }
-  ],
-  "howler": [
-    {
-      "id": "./node_modules/howler/dist/howler.js",
-      "name": "./node_modules/howler/dist/howler.js",
-      "file": "static/chunks/1.js",
-      "publicPath": "static/chunks/1.js"
-    }
   ]
 }

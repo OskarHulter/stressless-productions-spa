@@ -1,40 +1,13 @@
 import React from 'react'
-import App from 'next/app'
-import { ThemeProvider } from 'styled-components'
+import '../styles/index.css'
+import { AppProps } from 'next/app'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCheckSquare, faCoffee, faEnvelopeSquare, faSpinner } from '@fortawesome/free-solid-svg-icons'
+import { faCheckSquare, faCoffee, faEnvelopeSquare, faSpinner, faTimes } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faCheckSquare, faCoffee, faEnvelopeSquare, faSpinner)
+library.add(faCheckSquare, faCoffee, faEnvelopeSquare, faSpinner, faTimes)
 
-const theme = {
-  colors: {
-    primary: '#0070f3',
-    secondary: 'red',
-    highlight: 'blue',
-    success: 'green',
-    warning: 'yellow',
-    error: 'red',
-    background: 'purple',
-    text: 'white'
-  },
-  sizes: {
-    fieldHeight: '20px',
-    fieldMinWidth: '40px',
-    itemWidth: '100px'
-  },
-  fonts: {
-    headline: 'comic sans',
-    paragraph: 'sans-serif'
-  }
-}
+const MyApp = ({ Component, pageProps }: AppProps) => (
+  <Component {...pageProps} />
+)
 
-export default class MyApp extends App {
-  render() {
-    const { Component, pageProps } = this.props
-    return (
-      <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
-      </ThemeProvider>
-    )
-  }
-}
+export default MyApp

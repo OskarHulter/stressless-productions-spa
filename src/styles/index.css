@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply p-12 font-sans leading-normal tracking-normal bg-blue-500;
+}
+
+  

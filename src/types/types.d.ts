@@ -31,16 +31,22 @@ export type Song = {
   title: string
   artist: Artist
   runtime: number
-  rating: Rating 
+  rating: Rating
 }
 
 export type Release = {
   id: string
   title: string
   artist: Artist
+  artwork: Artwork
   songs: Song[]
-  runtime: number
   rating: Rating
+  runtime: number
+}
+
+export type Artwork = {
+  id: string
+  path: string
 }
 
 export type Artist = {

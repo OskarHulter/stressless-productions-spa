@@ -1,3 +1,4 @@
+import Link from 'next/link'
 
 const Header = () =>
   <>
@@ -26,9 +27,9 @@ const Header = () =>
             </a>
           </li>
           <li className="mr-3">
-            <a className="inline-block px-4 py-2 no-underline text-grey-dark hover:text-grey-lighter hover:text-underline" href="#">
-              link
-            </a>
+            <Link href="/">
+              <a>Back to home</a>
+            </Link>
           </li>
           <li className="mr-3">
             <a className="inline-block px-4 py-2 no-underline text-grey-dark hover:text-grey-lighter hover:text-underline" href="#">

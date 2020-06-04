@@ -1,0 +1,1 @@
+export const apiRoute = `https://pokeapi.co/api/v2/`
